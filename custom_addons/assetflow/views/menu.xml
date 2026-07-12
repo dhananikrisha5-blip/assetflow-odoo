@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Main Menu -->
+    <menuitem
+        id="menu_assetflow_root"
+        name="AssetFlow"
+        sequence="1"/>
+
+    <!-- Department Menu -->
+    <menuitem
+        id="menu_asset_department"
+        name="Departments"
+        parent="menu_assetflow_root"
+        action="action_asset_department"
+        sequence="1"/>
+
+</odoo>

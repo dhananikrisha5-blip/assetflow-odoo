@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- List View -->
+    <record id="view_asset_department_tree" model="ir.ui.view">
+        <field name="name">asset.department.tree</field>
+        <field name="model">asset.department</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_asset_department_form" model="ir.ui.view">
+        <field name="name">asset.department.form</field>
+        <field name="model">asset.department</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_asset_department" model="ir.actions.act_window">
+        <field name="name">Departments</field>
+        <field name="res_model">asset.department</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
